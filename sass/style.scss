@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: 'icomoon';
-    src:url('fonts/icomoon.eot?-grvpaa');
-    src:url('fonts/icomoon.eot?#iefix-grvpaa') format('embedded-opentype'),
-        url('fonts/icomoon.woff?-grvpaa') format('woff'),
-        url('fonts/icomoon.ttf?-grvpaa') format('truetype'),
-        url('fonts/icomoon.svg?-grvpaa#icomoon') format('svg');
+    src:url('../fonts/icomoon.eot?-grvpaa');
+    src:url('../fonts/icomoon.eot?#iefix-grvpaa') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-grvpaa') format('woff'),
+        url('../fonts/icomoon.ttf?-grvpaa') format('truetype'),
+        url('../fonts/icomoon.svg?-grvpaa#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -31,14 +31,16 @@ header {
     left: 0;
     z-index: 1000;
     border-bottom: 1px solid rgba(0,0,0,0.05);
-    .notice {
-        height: 100%;
-
-        .fa-quill {
-            width: 80px;
-
+    .nav {
+        height: 46px;
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,0.15);
+        .icon {
             &:before {
-                content: "\e600";
+                font-family: 'icomoon';
+                content: "\e608";
+                display: block;
             }
         }
     }

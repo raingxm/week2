@@ -65,8 +65,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?-grvpaa");
-  src: url("fonts/icomoon.eot?#iefix-grvpaa") format("embedded-opentype"), url("fonts/icomoon.woff?-grvpaa") format("woff"), url("fonts/icomoon.ttf?-grvpaa") format("truetype"), url("fonts/icomoon.svg?-grvpaa#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-grvpaa");
+  src: url("../fonts/icomoon.eot?#iefix-grvpaa") format("embedded-opentype"), url("../fonts/icomoon.woff?-grvpaa") format("woff"), url("../fonts/icomoon.ttf?-grvpaa") format("truetype"), url("../fonts/icomoon.svg?-grvpaa#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -92,16 +92,17 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 /* line 34, ../sass/style.scss */
-.top-bar .notice {
-  height: 100%;
-}
-/* line 37, ../sass/style.scss */
-.top-bar .notice .fa-quill {
-  width: 80px;
+.top-bar .nav {
+  height: 46px;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 /* line 40, ../sass/style.scss */
-.top-bar .notice .fa-quill:before {
-  content: "\e600";
+.top-bar .nav .icon:before {
+  font-family: 'icomoon';
+  content: "\e608";
+  display: block;
 }
 
 /* main content part */
