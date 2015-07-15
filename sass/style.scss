@@ -16,10 +16,33 @@ body {
 	font-size: 62.5%;
 }
 
-$header-color: #FFFBF5;
+
+/*  header part  */
 
 header {
     height: 80px;
     width: 100%;
-    background-color: $header-color;
 }
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    .notice {
+        height: 100%;
+
+        .fa-quill {
+            width: 80px;
+
+            &:before {
+                content: "\e600";
+            }
+        }
+    }
+}
+
+
+/* main content part */

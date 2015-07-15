@@ -75,9 +75,33 @@ body {
   font-size: 62.5%;
 }
 
-/* line 21, ../sass/style.scss */
+/*  header part  */
+/* line 22, ../sass/style.scss */
 header {
   height: 80px;
   width: 100%;
-  background-color: #FFFBF5;
 }
+
+/* line 27, ../sass/style.scss */
+.top-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+/* line 34, ../sass/style.scss */
+.top-bar .notice {
+  height: 100%;
+}
+/* line 37, ../sass/style.scss */
+.top-bar .notice .fa-quill {
+  width: 80px;
+}
+/* line 40, ../sass/style.scss */
+.top-bar .notice .fa-quill:before {
+  content: "\e600";
+}
+
+/* main content part */
