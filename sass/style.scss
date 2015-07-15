@@ -24,6 +24,17 @@ header {
     width: 100%;
 }
 
+.icon {
+    &:before {
+        font-family: 'icomoon';
+        display: block;
+    }
+}
+
+.container {
+    text-align: center;
+}
+
 .top-bar {
     position: fixed;
     top: 0;
@@ -36,12 +47,18 @@ header {
         position: relative;
         width: 100%;
         border-bottom: 1px solid rgba(0,0,0,0.15);
-        .icon {
+
+        .icon-bird {
             &:before {
-                font-family: 'icomoon';
                 content: "\e608";
-                display: block;
+                text-align: center;
+                font-size: 20px;
             }
+        }
+
+        .bird-topbar {
+            color: #55acee;
+            margin-top: 14px;
         }
     }
 }

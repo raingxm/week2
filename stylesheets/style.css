@@ -82,7 +82,18 @@ header {
   width: 100%;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
+.icon:before {
+  font-family: 'icomoon';
+  display: block;
+}
+
+/* line 34, ../sass/style.scss */
+.container {
+  text-align: center;
+}
+
+/* line 38, ../sass/style.scss */
 .top-bar {
   position: fixed;
   top: 0;
@@ -91,18 +102,23 @@ header {
   z-index: 1000;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-/* line 34, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .top-bar .nav {
   height: 46px;
   position: relative;
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
-/* line 40, ../sass/style.scss */
-.top-bar .nav .icon:before {
-  font-family: 'icomoon';
+/* line 52, ../sass/style.scss */
+.top-bar .nav .icon-bird:before {
   content: "\e608";
-  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+/* line 59, ../sass/style.scss */
+.top-bar .nav .bird-topbar {
+  color: #55acee;
+  margin-top: 14px;
 }
 
 /* main content part */
