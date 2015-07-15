@@ -16,11 +16,13 @@ body {
 	font-size: 62.5%;
 }
 
+$header-height: 80px;
+$font-size: 20px;
 
 /*  header part  */
 
 header {
-    height: 80px;
+    height: $header-height;
     width: 100%;
 }
 
@@ -52,7 +54,7 @@ header {
             &:before {
                 content: "\e608";
                 text-align: center;
-                font-size: 20px;
+                font-size: $font-size;
             }
         }
 
@@ -63,5 +65,27 @@ header {
     }
 }
 
-
 /* main content part */
+
+/* left-aside */
+#left-aside {
+    background-color: steelblue;
+    position: absolute;
+    bottom: 0;
+    right: 75%;
+    top: $header-height;
+    left: 0;
+    min-height: 100%;
+    font-size: $font-size;
+    .introduction {
+        position: absolute;
+        top: 0;
+        bottom: 60%;
+    }
+
+    .activities {
+        position: absolute;
+        top: 70%;
+    }
+
+}
