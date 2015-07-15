@@ -33,10 +33,6 @@ header {
     }
 }
 
-.container {
-    text-align: center;
-}
-
 .top-bar {
     position: fixed;
     top: 0;
@@ -44,11 +40,15 @@ header {
     left: 0;
     z-index: 1000;
     border-bottom: 1px solid rgba(0,0,0,0.05);
-    .nav {
+
+    .global-nav {
         height: 46px;
         position: relative;
         width: 100%;
         border-bottom: 1px solid rgba(0,0,0,0.15);
+        .container {
+           text-align: center;
+        }
 
         .icon-bird {
             &:before {
@@ -62,9 +62,25 @@ header {
             color: #55acee;
             margin-top: 14px;
         }
+
+        .navigation {
+            display: inline-block;
+            float: left;
+            .home {
+                &:before {
+                    content: "\e600";
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> add plume icon
 /* main content part */
 
 /* left-aside */
