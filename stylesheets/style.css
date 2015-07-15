@@ -63,12 +63,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 4, ../sass/style.scss */
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?-grvpaa");
+  src: url("fonts/icomoon.eot?#iefix-grvpaa") format("embedded-opentype"), url("fonts/icomoon.woff?-grvpaa") format("woff"), url("fonts/icomoon.ttf?-grvpaa") format("truetype"), url("fonts/icomoon.svg?-grvpaa#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 15, ../sass/style.scss */
 body {
   font-size: 62.5%;
 }
 
-/* line 10, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 header {
   height: 80px;
   width: 100%;
