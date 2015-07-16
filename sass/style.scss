@@ -19,6 +19,7 @@ body {
 $header-height: 80px;
 $font-size: 20px;
 $global-nav-height: 46px;
+$normal-icon-size: 20px;
 
 /*  header part  */
 
@@ -37,6 +38,10 @@ header {
 
 .large-icon:before {
     font-size: 25px;
+}
+
+.normal-icon:before {
+    font-size: $normal-icon-size;
 }
 
 .nav {
@@ -74,7 +79,6 @@ header {
             &:before {
                 content: "\e608";
                 text-align: center;
-                font-size: $font-size;
             }
         }
 
