@@ -16,10 +16,12 @@ body {
 	font-size: 62.5%;
 }
 
-$header-height: 80px;
+$header-height: 100px;
 $font-size: 20px;
-$global-nav-height: 46px;
+$global-nav-height: 80px;
 $normal-icon-size: 20px;
+$content-background: #F2EEE8;
+$left-side-width: 280px;
 
 /*  header part  */
 
@@ -108,17 +110,14 @@ header {
     }
 }
 
-/* main content part */
-
 /* left-aside */
 #left-aside {
-    background-color: steelblue;
+    background-color: #81A8CA;
     position: absolute;
     bottom: 0;
-    right: 75%;
+    width: $left-side-width;
     top: $header-height;
     left: 0;
-    min-height: 100%;
     font-size: $font-size;
     .introduction {
         position: absolute;
@@ -130,5 +129,26 @@ header {
         position: absolute;
         top: 70%;
     }
+}
 
+/* main content part */
+.content {
+    background-color: #F2EEE8;
+    position: absolute;
+    top: $header-height;
+    bottom: 0;
+    left: $left-side-width;
+    right: 160px;
+}
+
+
+/*  right side bar */
+
+.dashboard-right {
+    width: 160px;
+    background-color: #ff0000;
+    position: absolute;
+    top: $header-height;
+    right: 0;
+    bottom: 0;;
 }
