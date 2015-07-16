@@ -2,6 +2,7 @@
 @import "compass/css3";
 
 @font-face {
+<<<<<<< HEAD
     font-family: 'icomoon';
     src:url('../fonts/icomoon.eot?-grvpaa');
     src:url('../fonts/icomoon.eot?#iefix-grvpaa') format('embedded-opentype'),
@@ -10,24 +11,45 @@
         url('../fonts/icomoon.svg?-grvpaa#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
+=======
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?-grvpaa');
+  src: url('fonts/icomoon.eot?#iefix-grvpaa') format('embedded-opentype'),
+  url('fonts/icomoon.woff?-grvpaa') format('woff'),
+  url('fonts/icomoon.ttf?-grvpaa') format('truetype'),
+  url('fonts/icomoon.svg?-grvpaa#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+>>>>>>> gh-pages
 }
 
 body {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
 
+<<<<<<< HEAD
 $header-height: 100px;
 $font-size: 20px;
 $global-nav-height: 80px;
 $normal-icon-size: 20px;
 $content-background: #F2EEE8;
 $left-side-width: 280px;
+=======
+$header-height: 80px;
+$font: 20px;
+
+>>>>>>> gh-pages
 
 /*  header part  */
 
 header {
+<<<<<<< HEAD
     height: $header-height;
     width: 100%;
+=======
+  height: $header-height;
+  width: 100%;
+>>>>>>> gh-pages
 }
 
 .icon {
@@ -61,6 +83,7 @@ header {
 }
 
 .top-bar {
+<<<<<<< HEAD
     position: fixed;
     top: 0;
     right: 0;
@@ -107,9 +130,28 @@ header {
                 }
             }
         }
+=======
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  .notice {
+    height: 100%;
+
+    .fa-quill {
+      width: 80px;
+
+      &:before {
+        content: "\e600";
+      }
+>>>>>>> gh-pages
     }
+  }
 }
 
+<<<<<<< HEAD
 /* left-aside */
 #left-aside {
     background-color: #81A8CA;
@@ -151,4 +193,29 @@ header {
     top: $header-height;
     right: 0;
     bottom: 0;;
+=======
+/* main content part */
+
+/* left-aside */
+#left-aside {
+  background-color: steelblue;
+  position: absolute;
+  bottom: 0;
+  right: 75%;
+  top: $header-height;
+  left: 0;
+  min-height: 100%;
+  font-size: $font;
+  .introduction {
+    position: absolute;
+    top: 0;
+    bottom: 60%;
+  }
+
+  .activities {
+    position: absolute;
+    top: 70%;
+  }
+
+>>>>>>> gh-pages
 }
