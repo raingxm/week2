@@ -18,6 +18,7 @@ body {
 
 $header-height: 80px;
 $font-size: 20px;
+$global-nav-height: 46px;
 
 /*  header part  */
 
@@ -27,9 +28,28 @@ header {
 }
 
 .icon {
+    display: inline-block;
     &:before {
         font-family: 'icomoon';
-        display: block;
+        text-align: center;
+    }
+}
+
+.large-icon:before {
+    font-size: 25px;
+}
+
+.nav {
+    overflow: hidden;
+    > li {
+        float: left;
+        position: relative;
+        .icon {
+            float: left;
+            margin: 11px 0 0 10px;
+            width: 23px;
+            height: 23px;
+        }
     }
 }
 
@@ -42,7 +62,7 @@ header {
     border-bottom: 1px solid rgba(0,0,0,0.05);
 
     .global-nav {
-        height: 46px;
+        height: $global-nav-height;
         position: relative;
         width: 100%;
         border-bottom: 1px solid rgba(0,0,0,0.15);
@@ -66,21 +86,24 @@ header {
         .navigation {
             display: inline-block;
             float: left;
-            .home {
+            .global-actions {
+                > li {
+                    height: $global-nav-height;
+                    width: 50px;
+                }
+            }
+
+            .home-icon {
+                width: 45px;
+                margin-top: 10px;
                 &:before {
                     content: "\e600";
-                    font-size: 20px;
                 }
             }
         }
     }
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> add plume icon
 /* main content part */
 
 /* left-aside */
