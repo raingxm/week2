@@ -345,8 +345,8 @@ header {
 /*  right side bar */
 /* line 294, ../sass/style.scss */
 .dashboard-right {
-  width: 160px;
-  background-color: #ff0000;
+  width: 300px;
+  background-color: #FFFBF5;
   position: absolute;
   top: 80px;
   right: 0;
