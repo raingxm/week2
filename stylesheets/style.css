@@ -235,9 +235,25 @@ header {
   top: 10px;
   font-weight: bold;
 }
+/* line 187, ../sass/style.scss */
+.top-bar .global-nav .pull-right {
+  float: right;
+  text-align: left;
+}
+/* line 190, ../sass/style.scss */
+.top-bar .global-nav .pull-right .form-search {
+  height: 33px;
+  margin: 7px 15px 0 0;
+  width: 220px;
+  float: left;
+}
+/* line 196, ../sass/style.scss */
+.top-bar .global-nav .pull-right .form-search .search-input {
+  display: block;
+}
 
 /* left-aside */
-/* line 190, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 #left-aside {
   background-color: #81A8CA;
   position: absolute;
@@ -247,20 +263,20 @@ header {
   left: 0;
   font-size: 20px;
 }
-/* line 198, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 #left-aside .introduction {
   position: absolute;
   top: 0;
   bottom: 60%;
 }
-/* line 204, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 #left-aside .activities {
   position: absolute;
   top: 70%;
 }
 
 /* main content part */
-/* line 211, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .content {
   background-color: #F2EEE8;
   position: absolute;
@@ -271,7 +287,7 @@ header {
 }
 
 /*  right side bar */
-/* line 223, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 .dashboard-right {
   width: 160px;
   background-color: #ff0000;
@@ -279,4 +295,13 @@ header {
   top: 80px;
   right: 0;
   bottom: 0;
+}
+
+@media screen and (min-width: 1236px) {
+  /* line 249, ../sass/style.scss */
+  .global-nav .container {
+    width: 1190px;
+    text-align: center;
+    margin: auto;
+  }
 }

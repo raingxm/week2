@@ -183,6 +183,21 @@ header {
                 }
             }
         }
+
+        .pull-right {
+            float: right;
+            text-align: left;
+            .form-search {
+                height: 33px;
+                margin: 7px 15px 0 0;
+                width: 220px;
+                float: left;
+
+                .search-input {
+                    display: block;
+                }
+            }
+        }
     }
 }
 
@@ -227,4 +242,13 @@ header {
     top: $header-height;
     right: 0;
     bottom: 0;;
+}
+
+
+@media screen and (min-width: 1236px) {
+    .global-nav .container {
+        width: 1190px;
+        text-align: center;
+        margin: auto;
+    }
 }
