@@ -1,6 +1,10 @@
 @import "compass/reset";
 @import "compass/css3";
 
+body {
+  font-size: 62.5%;
+}
+
 @font-face {
     font-family: 'icomoon';
     src:url('../fonts/icomoon.eot?-grvpaa');
@@ -12,16 +16,39 @@
     font-style: normal;
 }
 
-body {
-  font-size: 62.5%;
+
+
+/* mixin part */
+
+/* for draw circle */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
 }
+
+/* square shape, with same height and width*/
+@mixin square-size($side) {
+    width: $side;
+    height: $side;
+    display: inline-block;
+}
+
+
+
+/* global variable*/
 
 $header-height: 100px;
 $font-size: 20px;
 $global-nav-height: 80px;
-$normal-icon-size: 20px;
+$normal-icon-size: 16px;
 $content-background: #F2EEE8;
 $left-side-width: 280px;
+$left-side-blue: #81A8CA;
+$circle-icon-radius: 20px;
+
+
 
 /*  header part  */
 
@@ -38,12 +65,10 @@ header {
     }
 }
 
-.large-icon:before {
-    font-size: 25px;
-}
-
 .normal-icon:before {
     font-size: $normal-icon-size;
+    display: inline-block;
+    @include border-radius(13px);
 }
 
 .nav {
@@ -53,9 +78,10 @@ header {
         position: relative;
         .icon {
             float: left;
+            @include square-size($circle-icon-radius * 2);
+            @include border-radius($circle-icon-radius);
+            background-color: $left-side-blue;
             margin: 11px 0 0 10px;
-            width: 23px;
-            height: 23px;
         }
     }
 }
@@ -95,15 +121,16 @@ header {
             .global-actions {
                 > li {
                     height: $global-nav-height;
-                    width: 50px;
+                    width: 80px;
                 }
             }
 
             .home-icon {
-                width: 45px;
-                margin-top: 10px;
+                color: white;
                 &:before {
                     content: "\e600";
+                    position: relative;
+                    top: 7px;
                 }
             }
         }
@@ -112,7 +139,7 @@ header {
 
 /* left-aside */
 #left-aside {
-    background-color: #81A8CA;
+    background-color: $left-side-blue;
     position: absolute;
     bottom: 0;
     width: $left-side-width;

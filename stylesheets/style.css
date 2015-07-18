@@ -63,6 +63,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 4, ../sass/style.scss */
+body {
+  font-size: 62.5%;
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?-grvpaa");
@@ -70,56 +75,61 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
-/* line 15, ../sass/style.scss */
-body {
-  font-size: 62.5%;
-}
-
+/* mixin part */
+/* for draw circle */
+/* square shape, with same height and width*/
+/* global variable*/
 /*  header part  */
-/* line 28, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 header {
   height: 100px;
   width: 100%;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .icon {
   display: inline-block;
 }
-/* line 35, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .icon:before {
   font-family: 'icomoon';
   text-align: center;
 }
 
-/* line 41, ../sass/style.scss */
-.large-icon:before {
-  font-size: 25px;
-}
-
-/* line 45, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .normal-icon:before {
-  font-size: 20px;
+  font-size: 16px;
+  display: inline-block;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  border-radius: 13px;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .nav {
   overflow: hidden;
 }
-/* line 51, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .nav > li {
   float: left;
   position: relative;
 }
-/* line 54, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .nav > li .icon {
   float: left;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #81A8CA;
   margin: 11px 0 0 10px;
-  width: 23px;
-  height: 23px;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .top-bar {
   position: fixed;
   top: 0;
@@ -128,49 +138,50 @@ header {
   z-index: 1000;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-/* line 71, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .top-bar .global-nav {
   height: 80px;
   position: relative;
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
-/* line 76, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .top-bar .global-nav .container {
   text-align: center;
 }
-/* line 81, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .top-bar .global-nav .icon-bird:before {
   content: "\e608";
   text-align: center;
 }
-/* line 87, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .top-bar .global-nav .bird-topbar {
   color: #55acee;
   margin-top: 14px;
 }
-/* line 92, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .top-bar .global-nav .navigation {
   display: inline-block;
   float: left;
 }
-/* line 96, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .top-bar .global-nav .navigation .global-actions > li {
   height: 80px;
-  width: 50px;
+  width: 80px;
 }
-/* line 102, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .top-bar .global-nav .navigation .home-icon {
-  width: 45px;
-  margin-top: 10px;
+  color: white;
 }
-/* line 105, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .top-bar .global-nav .navigation .home-icon:before {
   content: "\e600";
+  position: relative;
+  top: 7px;
 }
 
 /* left-aside */
-/* line 114, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 #left-aside {
   background-color: #81A8CA;
   position: absolute;
@@ -180,20 +191,20 @@ header {
   left: 0;
   font-size: 20px;
 }
-/* line 122, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 #left-aside .introduction {
   position: absolute;
   top: 0;
   bottom: 60%;
 }
-/* line 128, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 #left-aside .activities {
   position: absolute;
   top: 70%;
 }
 
 /* main content part */
-/* line 135, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 .content {
   background-color: #F2EEE8;
   position: absolute;
@@ -204,7 +215,7 @@ header {
 }
 
 /*  right side bar */
-/* line 147, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .dashboard-right {
   width: 160px;
   background-color: #ff0000;
