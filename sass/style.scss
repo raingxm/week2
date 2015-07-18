@@ -39,10 +39,11 @@ body {
 
 /* global variable*/
 
-$header-height: 100px;
+$header-height: 80px;
 $font-size: 20px;
 $global-nav-height: 80px;
-$normal-icon-size: 16px;
+$normal-icon-size: 16px;      // for small icon
+$large-icon-size: 20px;       // for larger icon
 $content-background: #F2EEE8;
 $left-side-width: 280px;
 $left-side-blue: #81A8CA;
@@ -68,7 +69,13 @@ header {
 .normal-icon:before {
     font-size: $normal-icon-size;
     display: inline-block;
-    @include border-radius(13px);
+    @include border-radius($normal-icon-size / 2);
+}
+
+.large-icon:before {
+    font-size: $large-icon-size;
+    display: inline-block;
+    @include border-radius($large-icon-size / 2);
 }
 
 .nav {
@@ -76,12 +83,23 @@ header {
     > li {
         float: left;
         position: relative;
+        &:first-child {
+            border-right: 2px solid #F1EDE6;
+            span {
+                background-color: $left-side-blue;
+            }
+        }
+
+        span {
+            background-color: white;
+        }
+
         .icon {
             float: left;
             @include square-size($circle-icon-radius * 2);
             @include border-radius($circle-icon-radius);
-            background-color: $left-side-blue;
-            margin: 11px 0 0 10px;
+            border: 1px solid #E4E0D9;
+            margin: 20px;
         }
     }
 }
@@ -107,12 +125,15 @@ header {
             &:before {
                 content: "\e608";
                 text-align: center;
+                font-size: 30px;
             }
         }
 
         .bird-topbar {
             color: #55acee;
-            margin-top: 14px;
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
         }
 
         .navigation {
@@ -130,7 +151,35 @@ header {
                 &:before {
                     content: "\e600";
                     position: relative;
-                    top: 7px;
+                    top: 10px;
+                }
+            }
+
+            .notice-icon {
+                color: black;
+                &:before {
+                    content: "\e607";
+                    position: relative;
+                    top: 10px;
+                }
+            }
+
+            .email-icon {
+                color: black;
+                &:before {
+                    content: "\f03b";
+                    position: relative;
+                    top: 10px;
+                }
+            }
+
+            .octothorpe-icon {
+                color: black;
+                &:before {
+                    content: "#";
+                    position: relative;
+                    top: 10px;
+                    font-weight: bold;
                 }
             }
         }
