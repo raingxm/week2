@@ -151,8 +151,12 @@ header {
   border: 1px solid #E4E0D9;
   margin: 20px;
 }
+/* line 119, ../sass/style.scss */
+.nav > li a {
+  display: block;
+}
 
-/* line 121, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .top-bar {
   position: fixed;
   top: 0;
@@ -161,92 +165,92 @@ header {
   z-index: 1000;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-/* line 129, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .top-bar .global-nav {
   height: 80px;
   position: relative;
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
-/* line 134, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 .top-bar .global-nav .container {
   text-align: center;
 }
-/* line 139, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .top-bar .global-nav .icon-bird:before {
   content: "\e608";
   text-align: center;
   font-size: 30px;
 }
-/* line 146, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .top-bar .global-nav .bird-topbar {
   color: #55acee;
   position: absolute;
   top: 50%;
   margin-top: -15px;
 }
-/* line 153, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .top-bar .global-nav .navigation {
   display: inline-block;
   float: left;
 }
-/* line 157, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .top-bar .global-nav .navigation .global-actions > li {
   height: 80px;
   width: 80px;
 }
-/* line 163, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .top-bar .global-nav .navigation .home-icon {
   color: white;
 }
-/* line 165, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .top-bar .global-nav .navigation .home-icon:before {
   content: "\e600";
   position: relative;
   top: 10px;
 }
-/* line 172, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .top-bar .global-nav .navigation .notice-icon {
   color: black;
 }
-/* line 174, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .top-bar .global-nav .navigation .notice-icon:before {
   content: "\e607";
   position: relative;
   top: 10px;
 }
-/* line 181, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .top-bar .global-nav .navigation .email-icon {
   color: black;
 }
-/* line 183, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .top-bar .global-nav .navigation .email-icon:before {
   content: "\f03b";
   position: relative;
   top: 10px;
 }
-/* line 190, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .top-bar .global-nav .navigation .octothorpe-icon {
   color: black;
 }
-/* line 192, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .top-bar .global-nav .navigation .octothorpe-icon:before {
   content: "#";
   position: relative;
   top: 10px;
   font-weight: bold;
 }
-/* line 201, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .top-bar .global-nav .pull-right {
   float: right;
   text-align: left;
 }
-/* line 205, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .top-bar .global-nav .pull-right .search {
   float: left;
   display: block;
 }
-/* line 209, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .top-bar .global-nav .pull-right .search .form-search {
   height: 43px;
   margin: 20px 15px 0 0;
@@ -254,7 +258,7 @@ header {
   float: left;
   position: relative;
 }
-/* line 216, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .top-bar .global-nav .pull-right .search .form-search .search-input {
   display: block;
   width: 100%;
@@ -269,6 +273,7 @@ header {
   border-radius: 20px;
   padding: 5px 27px 6px 12px;
   font-size: 16px;
+  outline: none;
 }
 /* line 39, ../sass/style.scss */
 .top-bar .global-nav .pull-right .search .form-search .search-input:-moz-placeholder {
@@ -282,7 +287,7 @@ header {
 .top-bar .global-nav .pull-right .search .form-search .search-input::-webkit-input-placeholder {
   color: #C6C1B1;
 }
-/* line 230, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .top-bar .global-nav .pull-right .search .form-search .search-icon {
   position: absolute;
   top: 7px;
@@ -291,7 +296,7 @@ header {
   width: 26px;
   display: block;
 }
-/* line 238, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .top-bar .global-nav .pull-right .search .form-search .search-icon .nav-search {
   color: #66757f;
   font-size: 16px;
@@ -302,14 +307,32 @@ header {
   display: inline-block;
   background-color: transparent;
 }
-/* line 248, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 .top-bar .global-nav .pull-right .search .form-search .search-icon .nav-search:before {
   content: "\f002";
   text-align: center;
 }
+/* line 262, ../sass/style.scss */
+.top-bar .global-nav .pull-right .nav {
+  float: left;
+}
+/* line 264, ../sass/style.scss */
+.top-bar .global-nav .pull-right .nav li.me {
+  border: 0;
+}
+/* line 266, ../sass/style.scss */
+.top-bar .global-nav .pull-right .nav li.me img {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  margin: 16px 0 0 20px;
+}
 
 /* left-aside */
-/* line 261, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 #left-aside {
   background-color: #81A8CA;
   position: absolute;
@@ -319,20 +342,20 @@ header {
   left: 0;
   font-size: 20px;
 }
-/* line 269, ../sass/style.scss */
+/* line 287, ../sass/style.scss */
 #left-aside .introduction {
   position: absolute;
   top: 0;
   bottom: 60%;
 }
-/* line 275, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 #left-aside .activities {
   position: absolute;
   top: 70%;
 }
 
 /* main content part */
-/* line 282, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .content {
   background-color: #F2EEE8;
   position: absolute;
@@ -343,7 +366,7 @@ header {
 }
 
 /*  right side bar */
-/* line 294, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .dashboard-right {
   width: 300px;
   background-color: #FFFBF5;
@@ -354,7 +377,7 @@ header {
 }
 
 @media screen and (min-width: 1236px) {
-  /* line 305, ../sass/style.scss */
+  /* line 323, ../sass/style.scss */
   .global-nav .container {
     width: 1190px;
     text-align: center;
