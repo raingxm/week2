@@ -506,34 +506,58 @@ header {
   margin-left: 50px;
   display: block;
 }
-/* line 437, ../sass/style.scss */
+/* line 438, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-header img {
   float: left;
   margin-left: -50px;
 }
-/* line 441, ../sass/style.scss */
+/* line 442, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-header .full-name {
   font-size: 14px;
   color: #292f33;
 }
-/* line 445, ../sass/style.scss */
+/* line 446, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-header .time {
   float: right;
 }
+/* line 453, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .icon:before {
+  font-size: 16px;
+  text-align: center;
+}
+/* line 459, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-actions-list {
+  display: block;
+  margin-top: 15px;
+}
+/* line 466, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .action-reply .icon:before {
+  content: "\e601";
+}
 
-/* line 455, ../sass/style.scss */
+/* line 478, ../sass/style.scss */
 .username, .time a {
   font-size: 13px;
   color: #8899a6;
 }
 
-/* line 460, ../sass/style.scss */
+/* line 483, ../sass/style.scss */
 .username s {
   color: #b1bbc3;
 }
 
+/* line 487, ../sass/style.scss */
+.tweet-action-button {
+  display: inline-block;
+  color: #ccd6dd;
+  position: relative;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 /*  right side bar */
-/* line 467, ../sass/style.scss */
+/* line 499, ../sass/style.scss */
 .dashboard-right {
   width: 300px;
   background-color: #FFFBF5;
@@ -544,14 +568,14 @@ header {
 }
 
 @media screen and (min-width: 1236px) {
-  /* line 478, ../sass/style.scss */
+  /* line 510, ../sass/style.scss */
   .global-nav .container {
     width: 1190px;
     text-align: center;
     margin: auto;
   }
 
-  /* line 485, ../sass/style.scss */
+  /* line 517, ../sass/style.scss */
   .content .profile-status, .content .stream-container {
     width: 800px;
     margin: 0 auto;

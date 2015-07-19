@@ -433,6 +433,7 @@ header {
                 .tweet-content {
                     margin-left: 50px;
                     display: block;
+
                     .stream-item-header {
                         img {
                             float: left;
@@ -444,6 +445,28 @@ header {
                         }
                         .time {
                             float: right;
+                        }
+                    }
+
+                    .stream-item-footer {
+                        .icon {
+                            &:before {
+                                font-size: 16px;
+                                text-align: center;
+                            }
+                        }
+
+                        .tweet-actions-list {
+                            display: block;
+                            margin-top: 15px;
+                        }
+
+                        .action-reply {
+                            .icon {
+                                &:before {
+                                    content: "\e601";
+                                }
+                            }
                         }
                     }
                 }
@@ -459,6 +482,15 @@ header {
 
 .username s {
     color: #b1bbc3;
+}
+
+.tweet-action-button {
+    display: inline-block;
+    color: #ccd6dd;
+    position: relative;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
 }
 
 
