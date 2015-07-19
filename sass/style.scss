@@ -130,6 +130,7 @@ header {
     left: 0;
     z-index: 1000;
     border-bottom: 1px solid rgba(0,0,0,0.05);
+    background-color: white;
 
     .global-nav {
         height: $global-nav-height;
@@ -306,7 +307,7 @@ header {
     left: $left-side-width;
     right: $right-side-width;
 
-    div {
+    > div {
         width: 90%;
         margin: 0 auto;
         background-color: #FFFBF5;
@@ -355,6 +356,22 @@ header {
                     padding-top: 3px;
                     color: black;
                 }
+            }
+        }
+    }
+
+    .stream-container {
+        height: 800px;
+        margin-top: 30px;
+
+        ol {
+            list-style: none;
+
+            .tweet {
+                position: relative;
+                min-height: 51px;
+                background-color: red;
+                padding: 30px;
             }
         }
     }
