@@ -399,6 +399,12 @@ header {
                 padding-top: 10px;
                 height: 70px;
 
+                &:hover {
+                    .stat-label {
+                        color: $left-side-blue;
+                    }
+                }
+
                 span {
                     display: block;
                     font-size: 20px;
@@ -459,12 +465,45 @@ header {
                         .tweet-actions-list {
                             display: block;
                             margin-top: 15px;
+
+                            .tweet-action {
+                                float: left;
+                                margin-right: 20px;
+                            }
                         }
 
-                        .action-reply {
+                        .tweet-action-reply {
                             .icon {
                                 &:before {
                                     content: "\e601";
+                                }
+
+                                &:hover {
+                                    color: #9266CC;
+                                }
+                            }
+                        }
+
+                        .tweet-action-favorite {
+                            .icon {
+                                &:before {
+                                    content: "\f005";
+                                }
+
+                                &:hover {
+                                    color: #ffac33;
+                                }
+                            }
+                        }
+
+                        .tweet-action-retweet {
+                            .icon {
+                                &:before {
+                                    content: "\f021";
+                                }
+
+                                &:hover {
+                                    color: #5c913b;
                                 }
                             }
                         }
@@ -491,6 +530,15 @@ header {
     border: 0;
     background: transparent;
     cursor: pointer;
+}
+
+.tweet-action-count {
+    color: #8899a6;
+    display: inline-block;
+    font-size: 12px;
+    position: relative;
+    top: -3px;
+    padding: 0 6px;
 }
 
 

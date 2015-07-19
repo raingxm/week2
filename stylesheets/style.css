@@ -469,31 +469,35 @@ header {
   padding-top: 10px;
   height: 70px;
 }
-/* line 402, ../sass/style.scss */
+/* line 403, ../sass/style.scss */
+.content ul li a:hover .stat-label {
+  color: #81A8CA;
+}
+/* line 408, ../sass/style.scss */
 .content ul li a span {
   display: block;
   font-size: 20px;
 }
-/* line 407, ../sass/style.scss */
+/* line 413, ../sass/style.scss */
 .content ul li a .stat-label {
   color: #C8C2B3;
 }
-/* line 411, ../sass/style.scss */
+/* line 417, ../sass/style.scss */
 .content ul li a .stat-value {
   font-weight: bold;
   padding-top: 3px;
   color: black;
 }
-/* line 420, ../sass/style.scss */
+/* line 426, ../sass/style.scss */
 .content .stream-container {
   height: 1200px;
   margin-top: 30px;
 }
-/* line 424, ../sass/style.scss */
+/* line 430, ../sass/style.scss */
 .content .stream-container ol {
   list-style: none;
 }
-/* line 427, ../sass/style.scss */
+/* line 433, ../sass/style.scss */
 .content .stream-container ol .tweet {
   position: relative;
   min-height: 51px;
@@ -501,52 +505,77 @@ header {
   padding: 30px;
   cursor: pointer;
 }
-/* line 433, ../sass/style.scss */
+/* line 439, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content {
   margin-left: 50px;
   display: block;
 }
-/* line 438, ../sass/style.scss */
+/* line 444, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-header img {
   float: left;
   margin-left: -50px;
 }
-/* line 442, ../sass/style.scss */
+/* line 448, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-header .full-name {
   font-size: 14px;
   color: #292f33;
 }
-/* line 446, ../sass/style.scss */
+/* line 452, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-header .time {
   float: right;
 }
-/* line 453, ../sass/style.scss */
+/* line 459, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .icon:before {
   font-size: 16px;
   text-align: center;
 }
-/* line 459, ../sass/style.scss */
+/* line 465, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-actions-list {
   display: block;
   margin-top: 15px;
 }
-/* line 466, ../sass/style.scss */
-.content .stream-container ol .tweet .tweet-content .stream-item-footer .action-reply .icon:before {
+/* line 469, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-actions-list .tweet-action {
+  float: left;
+  margin-right: 20px;
+}
+/* line 477, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-reply .icon:before {
   content: "\e601";
 }
+/* line 481, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-reply .icon:hover {
+  color: #9266CC;
+}
+/* line 489, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-favorite .icon:before {
+  content: "\f005";
+}
+/* line 493, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-favorite .icon:hover {
+  color: #ffac33;
+}
+/* line 501, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-retweet .icon:before {
+  content: "\f021";
+}
+/* line 505, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-retweet .icon:hover {
+  color: #5c913b;
+}
 
-/* line 478, ../sass/style.scss */
+/* line 517, ../sass/style.scss */
 .username, .time a {
   font-size: 13px;
   color: #8899a6;
 }
 
-/* line 483, ../sass/style.scss */
+/* line 522, ../sass/style.scss */
 .username s {
   color: #b1bbc3;
 }
 
-/* line 487, ../sass/style.scss */
+/* line 526, ../sass/style.scss */
 .tweet-action-button {
   display: inline-block;
   color: #ccd6dd;
@@ -556,8 +585,18 @@ header {
   cursor: pointer;
 }
 
+/* line 535, ../sass/style.scss */
+.tweet-action-count {
+  color: #8899a6;
+  display: inline-block;
+  font-size: 12px;
+  position: relative;
+  top: -3px;
+  padding: 0 6px;
+}
+
 /*  right side bar */
-/* line 499, ../sass/style.scss */
+/* line 547, ../sass/style.scss */
 .dashboard-right {
   width: 300px;
   background-color: #FFFBF5;
@@ -568,14 +607,14 @@ header {
 }
 
 @media screen and (min-width: 1236px) {
-  /* line 510, ../sass/style.scss */
+  /* line 558, ../sass/style.scss */
   .global-nav .container {
     width: 1190px;
     text-align: center;
     margin: auto;
   }
 
-  /* line 517, ../sass/style.scss */
+  /* line 565, ../sass/style.scss */
   .content .profile-status, .content .stream-container {
     width: 800px;
     margin: 0 auto;
