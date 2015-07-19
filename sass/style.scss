@@ -99,6 +99,10 @@ s {
     @include border-radius($large-icon-size / 2);
 }
 
+.tweet-text-size {
+    font-size: 14px;
+}
+
 .nav {
     overflow: hidden;
     > li {
@@ -471,5 +475,12 @@ s {
         width: 1190px;
         text-align: center;
         margin: auto;
+    }
+
+    .content {
+        .profile-status, .stream-container {
+            width: 800px;
+            margin: 0 auto;
+        }
     }
 }
