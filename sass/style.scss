@@ -1,9 +1,6 @@
 @import "compass/reset";
 @import "compass/css3";
 
-body {
-  font-size: 62.5%;
-}
 
 @font-face {
     font-family: 'icomoon';
@@ -15,7 +12,6 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-
 
 
 /* mixin part */
@@ -63,11 +59,11 @@ $circle-icon-radius: 20px;
 $font-color: white;
 
 
-/*  header part  */
+/* golbal tag style */
 
-header {
-    height: $header-height;
-    width: 100%;
+body {
+  font-size: 62.5%;
+  background-color: $content-background;
 }
 
 a {
@@ -77,6 +73,15 @@ a {
 s {
     text-decoration: none;
 }
+
+
+/* header part */
+
+header {
+    height: $header-height;
+    width: 100%;
+}
+
 
 .icon {
     display: inline-block;
