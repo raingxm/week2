@@ -496,20 +496,25 @@ s {
   font-size: 14px;
   color: #292f33;
 }
+/* line 425, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-header .time {
+  float: right;
+  font-size: 13px;
+}
 
-/* line 432, ../sass/style.scss */
+/* line 436, ../sass/style.scss */
 .username {
   font-size: 13px;
   color: #8899a6;
 }
 
-/* line 437, ../sass/style.scss */
+/* line 441, ../sass/style.scss */
 .username s {
   color: #b1bbc3;
 }
 
 /*  right side bar */
-/* line 444, ../sass/style.scss */
+/* line 448, ../sass/style.scss */
 .dashboard-right {
   width: 300px;
   background-color: #FFFBF5;
@@ -520,7 +525,7 @@ s {
 }
 
 @media screen and (min-width: 1236px) {
-  /* line 455, ../sass/style.scss */
+  /* line 459, ../sass/style.scss */
   .global-nav .container {
     width: 1190px;
     text-align: center;
