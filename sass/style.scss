@@ -48,8 +48,6 @@ body {
 }
 
 
-
-
 /* global variable*/
 
 $header-height: 80px;
@@ -70,6 +68,10 @@ $circle-icon-radius: 20px;
 header {
     height: $header-height;
     width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 .icon {
@@ -373,14 +375,21 @@ header {
             .tweet {
                 position: relative;
                 min-height: 51px;
-                background-color: red;
+                border-bottom: 1px solid #e1e8ed;
                 padding: 30px;
                 cursor: pointer;
                 .tweet-content {
                     margin-left: 50px;
                     display: block;
                     .stream-item-header {
-
+                        img {
+                            float: left;
+                            margin-left: -50px;
+                        }
+                        .full-name {
+                            font-size: 14px;
+                            color: #292f33;
+                        }
                     }
                 }
             }
