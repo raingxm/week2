@@ -289,7 +289,7 @@ s {
 }
 
 /* left-aside */
-#left-aside {
+.left-aside {
   position: absolute;
   top: 0;
   left: 0;
@@ -622,8 +622,10 @@ s {
     margin-left: 20px;
   }
   .right-second {
+    background-color: #FFFBF5;
     margin-left: 20px;
     margin-right: 40px;
+    background-size: cover;
     a {
       float: right;
       font-size: 1rem;
@@ -679,5 +681,19 @@ s {
       width: 800px;
       margin: 0 auto;
     }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  .dashboard-right {
+    position: static;
+    .right-first {
+      display: none;
+    }
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: 1024px;
+    bottom: 0;
   }
 }
