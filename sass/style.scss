@@ -439,7 +439,6 @@ s {
                         }
                         .time {
                             float: right;
-                            font-size: 13px;
                         }
                     }
                 }
@@ -448,7 +447,7 @@ s {
     }
 }
 
-.username {
+.username, .time a {
     font-size: 13px;
     color: #8899a6;
 }
