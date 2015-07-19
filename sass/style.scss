@@ -123,6 +123,12 @@ header {
     }
 }
 
+.avatar {
+    width: 40px;
+    height: 40px;
+    @include border-radius(20px);
+}
+
 .top-bar {
     position: fixed;
     top: 0;
@@ -266,9 +272,6 @@ header {
                 li.me {
                     border: 0;
                     img {
-                        width: 40px;
-                        height: 40px;
-                        @include border-radius(20px);
                         margin: 16px 0 0 20px;
                     }
                 }
@@ -372,6 +375,14 @@ header {
                 min-height: 51px;
                 background-color: red;
                 padding: 30px;
+                cursor: pointer;
+                .tweet-content {
+                    margin-left: 50px;
+                    display: block;
+                    .stream-item-header {
+
+                    }
+                }
             }
         }
     }
