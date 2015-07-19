@@ -60,6 +60,7 @@ $large-icon-size: 20px;       // for larger icon
 $content-background: #F2EEE8;
 $left-side-width: 280px;
 $left-side-blue: #81A8CA;
+$right-side-width: 300px;
 $circle-icon-radius: 20px;
 
 
@@ -303,14 +304,25 @@ header {
     top: $header-height;
     bottom: 0;
     left: $left-side-width;
-    right: 160px;
+    right: $right-side-width;
+
+    div {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #FFFBF5;
+    }
+
+    .profile-status {
+        height: 80px;
+        margin-top: 40px;
+    }
 }
 
 
 /*  right side bar */
 
 .dashboard-right {
-    width: 300px;
+    width: $right-side-width;
     background-color: #FFFBF5;
     position: absolute;
     top: $header-height;
