@@ -297,17 +297,13 @@ s {
     font-size: $font-size;
     color: $font-color;
     .introduction {
-        position: absolute;
-
-        top: 0;
-        bottom: 60%;
-        margin:60px 25px 40px;
-        p:nth-child(2){
+        margin: 60px 25px 40px;
+        p:nth-child(2) {
             font-size: 1em;
             text-align: center;
-            line-height: 240%;
+            line-height: 140%;
         }
-        p:nth-child(3){
+        p:nth-child(3) {
             font-size: 0.8rem;
             text-align: center;
             line-height: 140%;
@@ -322,10 +318,25 @@ s {
         a {
             display: block;
             text-align: center;
-            line-height: 150%;
+            line-height: 300%;
             color: $font-color;
             font-size: 0.8rem;
             text-decoration: none;
+        }
+        .follow {
+            display: block;
+            height: 40px;
+            width: 160px;
+            margin: 0 auto;
+            text-align: center;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            border-radius: 20px;
+            background-color: #6D95B6;
+            color: $font-color;
+            border: 1px solid $left-side-blue;
+            transition: all 0.3s ease-in;
+            font-size: 1rem;
         }
     }
 
