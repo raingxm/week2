@@ -74,6 +74,10 @@ a {
     text-decoration: none;
 }
 
+s {
+    text-decoration: none;
+}
+
 .icon {
     display: inline-block;
     border: 0;
@@ -423,6 +427,15 @@ a {
             }
         }
     }
+}
+
+.username {
+    font-size: 13px;
+    color: #8899a6;
+}
+
+.username s {
+    color: #b1bbc3;
 }
 
 
