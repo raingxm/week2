@@ -389,23 +389,23 @@ s {
           margin-right: 8px;
         }
       }
-      li:nth-child(1) i{
+      li:nth-child(1) i {
         &:before {
           content: "\e600";
         }
       }
-      li:nth-child(2) i{
+      li:nth-child(2) i {
         &:before {
           content: "\e601";
         }
       }
       li:nth-child(4) i,
-      li:nth-child(3) i{
+      li:nth-child(3) i {
         &:before {
           content: "\f021";
         }
       }
-      li:nth-child(5) i{
+      li:nth-child(5) i {
         &:before {
           content: "\f005";
         }
@@ -418,7 +418,6 @@ s {
 .content {
   background-color: #F2EEE8;
   position: absolute;
-  //bottom: 0;
   left: $left-side-width;
   right: $right-side-width;
 
@@ -610,7 +609,61 @@ s {
   top: 0;
   bottom: 0;
   width: 290px;
-  background-color: #fff;
+  background-color: #FFFBF5;
+  h3 {
+    line-height: 140%;
+    font-size: 1rem;
+    margin: 20px 20px;
+  }
+  .right-first ul li {
+    color: $left-side-blue;
+    line-height: 200%;
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+  .right-second {
+    margin-left: 20px;
+    margin-right: 40px;
+    a {
+      float: right;
+      font-size: 1rem;
+      color: $left-side-blue;
+      text-decoration: none;
+    }
+    li {
+      position: relative;
+      padding: 12px 30px 10px 50px;
+
+      strong, span {
+        display: block;
+        line-height: 140%;
+        font-size: 0.8rem;
+        width: 120px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      span {
+        color: grey;
+      }
+      .icon {
+        float: right;
+        &:before {
+          content: "\e600";
+        }
+
+      }
+    }
+    img {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 40px;
+      height: 40px;
+      @include border-radius(50%);
+    }
+
+  }
 
 }
 
