@@ -365,24 +365,21 @@ s {
 }
 /* line 303, ../sass/style.scss */
 #left-aside .introduction {
-  position: absolute;
-  top: 0;
-  bottom: 60%;
   margin: 60px 25px 40px;
 }
-/* line 309, ../sass/style.scss */
+/* line 305, ../sass/style.scss */
 #left-aside .introduction p:nth-child(2) {
   font-size: 1em;
   text-align: center;
-  line-height: 240%;
+  line-height: 140%;
 }
-/* line 314, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 #left-aside .introduction p:nth-child(3) {
   font-size: 0.8rem;
   text-align: center;
   line-height: 140%;
 }
-/* line 319, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 #left-aside .introduction img {
   display: block;
   width: 80px;
@@ -393,23 +390,39 @@ s {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 326, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 #left-aside .introduction a {
   display: block;
   text-align: center;
-  line-height: 150%;
+  line-height: 300%;
   color: white;
   font-size: 0.8rem;
   text-decoration: none;
 }
-/* line 336, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
+#left-aside .introduction .follow {
+  display: block;
+  height: 40px;
+  width: 160px;
+  margin: 0 auto;
+  text-align: center;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #6D95B6;
+  color: white;
+  border: 1px solid #81A8CA;
+  transition: all 0.3s ease-in;
+  font-size: 1rem;
+}
+/* line 347, ../sass/style.scss */
 #left-aside .activities {
   position: absolute;
   top: 70%;
 }
 
 /* main content part */
-/* line 343, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 .content {
   background-color: #F2EEE8;
   position: absolute;
@@ -418,18 +431,18 @@ s {
   left: 280px;
   right: 300px;
 }
-/* line 351, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 .content > div {
   width: 90%;
   margin: 0 auto;
   background-color: #FFFBF5;
 }
-/* line 357, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
 .content .profile-status {
   height: 80px;
   margin-top: 40px;
 }
-/* line 362, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 .content ul {
   padding: 10px 0 0;
   display: table;
@@ -437,15 +450,15 @@ s {
   width: 100%;
   height: 100%;
 }
-/* line 369, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 .content ul li {
   display: table-cell;
 }
-/* line 373, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .content ul li.active a, .content ul li:hover a {
   border-bottom: 5px solid #81A8CA;
 }
-/* line 378, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 .content ul li a {
   text-decoration: none;
   text-align: center;
@@ -454,31 +467,31 @@ s {
   padding-top: 10px;
   height: 70px;
 }
-/* line 386, ../sass/style.scss */
+/* line 397, ../sass/style.scss */
 .content ul li a span {
   display: block;
   font-size: 20px;
 }
-/* line 391, ../sass/style.scss */
+/* line 402, ../sass/style.scss */
 .content ul li a .stat-label {
   color: #C8C2B3;
 }
-/* line 395, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 .content ul li a .stat-value {
   font-weight: bold;
   padding-top: 3px;
   color: black;
 }
-/* line 404, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 .content .stream-container {
-  height: 800px;
+  height: 1200px;
   margin-top: 30px;
 }
-/* line 408, ../sass/style.scss */
+/* line 419, ../sass/style.scss */
 .content .stream-container ol {
   list-style: none;
 }
-/* line 411, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 .content .stream-container ol .tweet {
   position: relative;
   min-height: 51px;
@@ -486,40 +499,40 @@ s {
   padding: 30px;
   cursor: pointer;
 }
-/* line 417, ../sass/style.scss */
+/* line 428, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content {
   margin-left: 50px;
   display: block;
 }
-/* line 421, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-header img {
   float: left;
   margin-left: -50px;
 }
-/* line 425, ../sass/style.scss */
+/* line 436, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-header .full-name {
   font-size: 14px;
   color: #292f33;
 }
-/* line 429, ../sass/style.scss */
+/* line 440, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-header .time {
   float: right;
   font-size: 13px;
 }
 
-/* line 440, ../sass/style.scss */
+/* line 451, ../sass/style.scss */
 .username {
   font-size: 13px;
   color: #8899a6;
 }
 
-/* line 445, ../sass/style.scss */
+/* line 456, ../sass/style.scss */
 .username s {
   color: #b1bbc3;
 }
 
 /*  right side bar */
-/* line 452, ../sass/style.scss */
+/* line 463, ../sass/style.scss */
 .dashboard-right {
   width: 300px;
   background-color: #FFFBF5;
@@ -530,14 +543,14 @@ s {
 }
 
 @media screen and (min-width: 1236px) {
-  /* line 463, ../sass/style.scss */
+  /* line 474, ../sass/style.scss */
   .global-nav .container {
     width: 1190px;
     text-align: center;
     margin: auto;
   }
 
-  /* line 470, ../sass/style.scss */
+  /* line 481, ../sass/style.scss */
   .content .profile-status, .content .stream-container {
     width: 800px;
     margin: 0 auto;
