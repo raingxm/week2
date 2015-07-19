@@ -316,6 +316,48 @@ header {
         height: 80px;
         margin-top: 40px;
     }
+
+    ul {
+        padding: 10px 0 0;
+        display: table;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+
+        li {
+            display: table-cell;
+
+            &.active, &:hover {
+                a {
+                    border-bottom: 5px solid $left-side-blue;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                text-align: center;
+                display: block;
+                box-sizing: border-box;
+                padding-top: 10px;
+                height: 70px;
+
+                span {
+                    display: block;
+                    font-size: 20px;
+                }
+
+                .stat-label {
+                    color: #C8C2B3;
+                }
+
+                .stat-value {
+                    font-weight: bold;
+                    padding-top: 3px;
+                    color: black;
+                }
+            }
+        }
+    }
 }
 
 
