@@ -746,7 +746,7 @@ s {
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 980px) {
+@media screen and (max-width: 980px) {
   /* line 688, ../sass/style.scss */
   .dashboard-right {
     position: static;
