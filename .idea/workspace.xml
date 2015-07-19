@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cb5a908-8861-4e87-81a8-a0e88a727b6a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/style.css" afterPath="$PROJECT_DIR$/stylesheets/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/style.scss" afterPath="$PROJECT_DIR$/sass/style.scss" />
     </list>
     <ignored path="week2.iws" />
@@ -27,8 +29,8 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3318078">
-              <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+            <state vertical-scroll-proportion="2.812357">
+              <caret line="479" column="10" selection-start-line="479" selection-start-column="10" selection-end-line="479" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -38,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="405.77777">
-              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -47,8 +49,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1896552">
-              <caret line="211" column="34" selection-start-line="211" selection-start-column="34" selection-end-line="211" selection-end-column="34" />
+            <state vertical-scroll-proportion="-1.4655173">
+              <caret line="97" column="30" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -82,8 +84,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sass/style.scss" />
       </list>
     </option>
@@ -485,12 +487,12 @@
       <workItem from="1437024775027" duration="1083000" />
       <workItem from="1437045446769" duration="468000" />
       <workItem from="1437095654447" duration="3882000" />
-      <workItem from="1437292538586" duration="9139000" />
+      <workItem from="1437292538586" duration="10126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14572000" />
+    <option name="totallyTimeSpent" value="15559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="23" width="1315" height="873" extended-state="0" />
@@ -651,23 +653,23 @@
     <entry file="file://$PROJECT_DIR$/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="405.77777">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1896552">
-          <caret line="211" column="34" selection-start-line="211" selection-start-column="34" selection-end-line="211" selection-end-column="34" />
+        <state vertical-scroll-proportion="-1.4655173">
+          <caret line="97" column="30" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3318078">
-          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+        <state vertical-scroll-proportion="2.812357">
+          <caret line="479" column="10" selection-start-line="479" selection-start-column="10" selection-end-line="479" selection-end-column="10" />
           <folding />
         </state>
       </provider>
