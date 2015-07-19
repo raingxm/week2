@@ -60,7 +60,7 @@ $left-side-width: 280px;
 $left-side-blue: #81A8CA;
 $right-side-width: 300px;
 $circle-icon-radius: 20px;
-
+$font-color: white;
 
 
 /*  header part  */
@@ -291,10 +291,40 @@ a {
     top: $header-height;
     left: 0;
     font-size: $font-size;
+    color: $font-color;
     .introduction {
         position: absolute;
+
         top: 0;
         bottom: 60%;
+        margin:60px 25px 40px;
+        p:nth-child(2){
+            font-size: 1em;
+            text-align: center;
+            line-height: 240%;
+        }
+        p:nth-child(3){
+            font-size: 0.8rem;
+            text-align: center;
+            line-height: 140%;
+        }
+        img {
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            @include border-radius(50%);
+        }
+        a {
+            display: block;
+            text-align: center;
+            line-height: 150%;
+            color: $font-color;
+            font-size: 0.8rem;
+            text-decoration: none;
+            //height: auto;
+            //width: auto;
+        }
     }
 
     .activities {
