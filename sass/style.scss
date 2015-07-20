@@ -501,20 +501,24 @@ s {
         border-bottom: 1px solid #e1e8ed;
         padding: 30px;
         cursor: pointer;
+
         .tweet-content {
           margin-left: 50px;
           display: block;
 
           .stream-item-header {
+
             img {
               float: left;
               margin-left: -50px;
             }
+
             .full-name {
               font-size: 14px;
               color: #292f33;
               font-weight: bold;
             }
+
             .time {
               float: right;
             }
@@ -551,9 +555,14 @@ s {
               .tweet-action {
                 float: left;
                 margin-right: 20px;
+
                 &.tweet-action-resize {
                   float: right;
+                  .tweet-action-button {
+                    padding: 0;
+                  }
                 }
+
                 &:last-child {
                   margin-right: 0;
                 }
@@ -736,7 +745,7 @@ s {
 
 }
 
-@media screen and (min-width: 1236px) {
+@media screen and (min-width: 1300px) {
   .global-nav .container {
     text-align: center;
     margin: auto;
@@ -744,7 +753,16 @@ s {
 
   .content {
     .profile-status, .stream-container {
-      width: 800px;
+      width: 700px;
+      margin: 40px auto 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  .content {
+    .profile-status, .stream-container {
+      width: 90%;
       margin: 40px auto 0;
     }
   }
