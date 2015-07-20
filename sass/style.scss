@@ -516,6 +516,8 @@ s {
           }
 
           .stream-item-footer {
+            display: table;
+            width: 100%;
             .icon {
               &:before {
                 font-size: 16px;
@@ -524,12 +526,19 @@ s {
             }
 
             .tweet-actions-list {
-              display: block;
+              display: table;
               margin-top: 15px;
+              width: 100%;
 
               .tweet-action {
                 float: left;
                 margin-right: 20px;
+                &.tweet-action-resize {
+                  float: right;
+                }
+                &:last-child {
+                  margin-right: 0;
+                }
               }
             }
 
@@ -575,11 +584,19 @@ s {
                   content: "\e606";
                   position: relative;
                   top: -3px;
-                  font-size: 16px;
+                  font-size: 20px;
                 }
 
                 &:hover {
                   color: #9266CC;
+                }
+              }
+            }
+
+            .tweet-action-resize {
+              .icon {
+                &:before {
+                  content: "\e603";
                 }
               }
             }

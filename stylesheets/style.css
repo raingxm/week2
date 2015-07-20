@@ -585,69 +585,87 @@ s {
 .content .stream-container ol .tweet .tweet-content .stream-item-header .time {
   float: right;
 }
-/* line 520, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer {
+  display: table;
+  width: 100%;
+}
+/* line 522, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .icon:before {
   font-size: 16px;
   text-align: center;
 }
-/* line 526, ../sass/style.scss */
+/* line 528, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-actions-list {
-  display: block;
+  display: table;
   margin-top: 15px;
+  width: 100%;
 }
-/* line 530, ../sass/style.scss */
+/* line 533, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-actions-list .tweet-action {
   float: left;
   margin-right: 20px;
 }
-/* line 538, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-actions-list .tweet-action.tweet-action-resize {
+  float: right;
+}
+/* line 539, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-actions-list .tweet-action:last-child {
+  margin-right: 0;
+}
+/* line 547, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-reply .icon:before {
   content: "\e601";
 }
-/* line 542, ../sass/style.scss */
+/* line 551, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-reply .icon:hover {
   color: #9266CC;
 }
-/* line 550, ../sass/style.scss */
+/* line 559, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-favorite .icon:before {
   content: "\f005";
 }
-/* line 554, ../sass/style.scss */
+/* line 563, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-favorite .icon:hover {
   color: #ffac33;
 }
-/* line 562, ../sass/style.scss */
+/* line 571, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-retweet .icon:before {
   content: "\f021";
 }
-/* line 566, ../sass/style.scss */
+/* line 575, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-retweet .icon:hover {
   color: #5c913b;
 }
-/* line 574, ../sass/style.scss */
+/* line 583, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-dropdown .icon:before {
   content: "\e606";
   position: relative;
   top: -3px;
-  font-size: 16px;
+  font-size: 20px;
 }
-/* line 581, ../sass/style.scss */
+/* line 590, ../sass/style.scss */
 .content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-dropdown .icon:hover {
   color: #9266CC;
 }
+/* line 598, ../sass/style.scss */
+.content .stream-container ol .tweet .tweet-content .stream-item-footer .tweet-action-resize .icon:before {
+  content: "\e603";
+}
 
-/* line 593, ../sass/style.scss */
+/* line 610, ../sass/style.scss */
 .username, .time a {
   font-size: 13px;
   color: #8899a6;
 }
 
-/* line 598, ../sass/style.scss */
+/* line 615, ../sass/style.scss */
 .username s {
   color: #b1bbc3;
 }
 
-/* line 602, ../sass/style.scss */
+/* line 619, ../sass/style.scss */
 .tweet-action-button {
   display: inline-block;
   color: #ccd6dd;
@@ -657,7 +675,7 @@ s {
   cursor: pointer;
 }
 
-/* line 611, ../sass/style.scss */
+/* line 628, ../sass/style.scss */
 .tweet-action-count {
   color: #8899a6;
   display: inline-block;
@@ -668,7 +686,7 @@ s {
 }
 
 /*  right side bar */
-/* line 622, ../sass/style.scss */
+/* line 639, ../sass/style.scss */
 .dashboard-right {
   position: absolute;
   right: 0;
@@ -677,39 +695,39 @@ s {
   width: 290px;
   background-color: #FFFBF5;
 }
-/* line 629, ../sass/style.scss */
+/* line 646, ../sass/style.scss */
 .dashboard-right h3 {
   line-height: 140%;
   font-size: 1rem;
   margin: 20px 20px;
 }
-/* line 634, ../sass/style.scss */
+/* line 651, ../sass/style.scss */
 .dashboard-right .right-first ul li {
   color: #81A8CA;
   line-height: 200%;
   font-size: 1rem;
   margin-left: 20px;
 }
-/* line 640, ../sass/style.scss */
+/* line 657, ../sass/style.scss */
 .dashboard-right .right-second {
   background-color: #FFFBF5;
   margin-left: 20px;
   margin-right: 40px;
   background-size: cover;
 }
-/* line 645, ../sass/style.scss */
+/* line 662, ../sass/style.scss */
 .dashboard-right .right-second a {
   float: right;
   font-size: 1rem;
   color: #81A8CA;
   text-decoration: none;
 }
-/* line 651, ../sass/style.scss */
+/* line 668, ../sass/style.scss */
 .dashboard-right .right-second li {
   position: relative;
   padding: 12px 30px 10px 50px;
 }
-/* line 655, ../sass/style.scss */
+/* line 672, ../sass/style.scss */
 .dashboard-right .right-second li strong, .dashboard-right .right-second li span {
   display: block;
   line-height: 140%;
@@ -719,19 +737,19 @@ s {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 664, ../sass/style.scss */
+/* line 681, ../sass/style.scss */
 .dashboard-right .right-second li span {
   color: grey;
 }
-/* line 667, ../sass/style.scss */
+/* line 684, ../sass/style.scss */
 .dashboard-right .right-second li .icon {
   float: right;
 }
-/* line 669, ../sass/style.scss */
+/* line 686, ../sass/style.scss */
 .dashboard-right .right-second li .icon:before {
   content: "\e600";
 }
-/* line 675, ../sass/style.scss */
+/* line 692, ../sass/style.scss */
 .dashboard-right .right-second img {
   position: absolute;
   left: 0;
@@ -745,21 +763,21 @@ s {
 }
 
 @media screen and (min-width: 1236px) {
-  /* line 689, ../sass/style.scss */
+  /* line 706, ../sass/style.scss */
   .global-nav .container {
     width: 1190px;
     text-align: center;
     margin: auto;
   }
 
-  /* line 696, ../sass/style.scss */
+  /* line 713, ../sass/style.scss */
   .content .profile-status, .content .stream-container {
     width: 800px;
     margin: 40px auto 0;
   }
 }
 @media screen and (max-width: 980px) {
-  /* line 704, ../sass/style.scss */
+  /* line 721, ../sass/style.scss */
   .dashboard-right {
     position: static;
     position: absolute;
@@ -768,7 +786,7 @@ s {
     top: 1024px;
     bottom: 0;
   }
-  /* line 706, ../sass/style.scss */
+  /* line 723, ../sass/style.scss */
   .dashboard-right .right-first {
     display: none;
   }
