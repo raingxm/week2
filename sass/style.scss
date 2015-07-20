@@ -646,7 +646,8 @@ s {
   h3 {
     line-height: 140%;
     font-size: 1rem;
-    margin: 20px 20px;
+    //margin: 20px 20px;
+    padding: 20px 20px;
   }
   .right-first ul li {
     color: $left-side-blue;
@@ -656,19 +657,18 @@ s {
   }
   .right-second {
     background-color: #FFFBF5;
-    margin-left: 20px;
-    margin-right: 40px;
     background-size: cover;
     a {
       float: right;
       font-size: 1rem;
       color: $left-side-blue;
       text-decoration: none;
+      padding: 20px 40px 20px 20px;
     }
     li {
       position: relative;
-      padding: 12px 30px 10px 50px;
-
+      margin: 0 40px 0 20px;
+      height: 50px;
       strong, span {
         display: block;
         line-height: 140%;
@@ -677,6 +677,7 @@ s {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        margin-left: 60px;
       }
       span {
         color: grey;
@@ -692,7 +693,7 @@ s {
     img {
       position: absolute;
       left: 0;
-      top: 10px;
+      top: 0;
       width: 40px;
       height: 40px;
       @include border-radius(50%);
@@ -717,7 +718,7 @@ s {
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1236px) {
   .dashboard-right {
     position: static;
     .right-first {
@@ -728,5 +729,17 @@ s {
     right: auto;
     top: 1024px;
     bottom: 0;
+    .right-second {
+      width: $left-side-width;
+    }
   }
 }
+
+@media screen and (max-width: 980px) {
+  .left-aside,
+  .dashboard-right {
+    position: static;
+    display: none;
+  }
+}
+
