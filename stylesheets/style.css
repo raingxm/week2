@@ -419,7 +419,7 @@ s {
   color: white;
   border: 1px solid #81A8CA;
   transition: all 0.3s ease-in;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 /* line 356, ../sass/style.scss */
 .left-aside ul li {
