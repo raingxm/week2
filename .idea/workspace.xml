@@ -29,8 +29,13 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/style.scss">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.54038996">
               <caret line="684" column="13" selection-start-line="684" selection-start-column="13" selection-end-line="684" selection-end-column="13" />
+=======
+            <state vertical-scroll-proportion="19.855154">
+              <caret line="648" column="23" selection-start-line="648" selection-start-column="23" selection-end-line="648" selection-end-column="23" />
+>>>>>>> change some icon.
               <folding />
             </state>
           </provider>
@@ -442,12 +447,20 @@
       <workItem from="1437397172259" duration="18000" />
       <workItem from="1437397303064" duration="49000" />
       <workItem from="1437397371805" duration="793000" />
+<<<<<<< HEAD
       <workItem from="1437398332104" duration="1828000" />
+=======
+      <workItem from="1437398332104" duration="2129000" />
+>>>>>>> change some icon.
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="28606000" />
+=======
+    <option name="totallyTimeSpent" value="28907000" />
+>>>>>>> change some icon.
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -813,8 +826,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.54038996">
           <caret line="684" column="13" selection-start-line="684" selection-start-column="13" selection-end-line="684" selection-end-column="13" />
+=======
+        <state vertical-scroll-proportion="19.855154">
+          <caret line="648" column="23" selection-start-line="648" selection-start-column="23" selection-end-line="648" selection-end-column="23" />
+>>>>>>> change some icon.
           <folding />
         </state>
       </provider>
