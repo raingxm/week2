@@ -466,7 +466,7 @@ s {
 }
 /* line 393, ../sass/style.scss */
 .left-aside .activities ul li:nth-child(1) i:before {
-  content: "\e600";
+  content: "\f05d";
 }
 /* line 398, ../sass/style.scss */
 .left-aside .activities ul li:nth-child(2) i:before {
@@ -745,12 +745,15 @@ s {
 /* line 685, ../sass/style.scss */
 .dashboard-right .right-second li .icon {
   float: right;
+  color: grey;
+  padding: 4px 6px;
+  border: 1px solid gainsboro;
 }
-/* line 687, ../sass/style.scss */
+/* line 690, ../sass/style.scss */
 .dashboard-right .right-second li .icon:before {
-  content: "\e600";
+  content: "\f05d";
 }
-/* line 693, ../sass/style.scss */
+/* line 696, ../sass/style.scss */
 .dashboard-right .right-second img {
   position: absolute;
   left: 0;
@@ -764,21 +767,21 @@ s {
 }
 
 @media screen and (min-width: 1236px) {
-  /* line 707, ../sass/style.scss */
+  /* line 710, ../sass/style.scss */
   .global-nav .container {
     width: 1190px;
     text-align: center;
     margin: auto;
   }
 
-  /* line 714, ../sass/style.scss */
+  /* line 717, ../sass/style.scss */
   .content .profile-status, .content .stream-container {
     width: 800px;
     margin: 40px auto 0;
   }
 }
 @media screen and (max-width: 1236px) {
-  /* line 722, ../sass/style.scss */
+  /* line 725, ../sass/style.scss */
   .dashboard-right {
     position: static;
     position: absolute;
@@ -787,17 +790,17 @@ s {
     top: 1024px;
     bottom: 0;
   }
-  /* line 724, ../sass/style.scss */
+  /* line 727, ../sass/style.scss */
   .dashboard-right .right-first {
     display: none;
   }
-  /* line 732, ../sass/style.scss */
+  /* line 735, ../sass/style.scss */
   .dashboard-right .right-second {
     width: 280px;
   }
 }
 @media screen and (max-width: 980px) {
-  /* line 739, ../sass/style.scss */
+  /* line 742, ../sass/style.scss */
   .left-aside,
   .dashboard-right {
     position: static;

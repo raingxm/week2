@@ -391,7 +391,7 @@ s {
       }
       li:nth-child(1) i {
         &:before {
-          content: "\e600";
+          content: "\f05d";
         }
       }
       li:nth-child(2) i {
@@ -684,8 +684,11 @@ s {
       }
       .icon {
         float: right;
+        color: grey;
+        padding: 4px 6px;
+        border: 1px solid gainsboro;
         &:before {
-          content: "\e600";
+          content: "\f05d";
         }
 
       }
