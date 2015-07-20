@@ -153,6 +153,7 @@ s {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     .container {
       text-align: center;
+      height: 100%;
     }
 
     .icon-bird {
@@ -279,6 +280,7 @@ s {
         float: left;
         li.me {
           border: 0;
+          margin-right: 30px;
           img {
             margin: 16px 0 0 20px;
           }
@@ -730,7 +732,6 @@ s {
 
 @media screen and (min-width: 1236px) {
   .global-nav .container {
-    width: 1190px;
     text-align: center;
     margin: auto;
   }
@@ -768,3 +769,7 @@ s {
   }
 }
 
+
+@media screen and (max-width: 680px) {
+
+}
