@@ -806,7 +806,50 @@ s {
   }
 }
 
+@media screen and (max-width: 750px) {
+  .top-bar {
+    .global-actions li {
+      display: none;
+      &:first-child {
+        display: inline-block;
+      }
+    }
 
-@media screen and (max-width: 680px) {
+    .pull-right {
+      .search .form-search {
+        display: none;
+      }
+    }
+  }
 
+  .left-aside {
+    display: none;
+  }
+
+  .content {
+    left: 0;
+    right: 0;
+
+    .profile-status {
+      background-color: white;
+      width: 100%;
+      height: 100%;
+
+      ul li {
+        display: block;
+        a span {
+          font-weight: normal;
+        }
+      }
+    }
+
+    .stream-container {
+      background-color: white;
+      width: 100%;
+    }
+  }
+
+  .dashboard-right {
+    display: none;
+  }
 }
