@@ -473,6 +473,7 @@ s {
 
         .stat-label {
           color: #C8C2B3;
+          font-weight: 100;
         }
 
         .stat-value {
@@ -509,9 +510,18 @@ s {
             .full-name {
               font-size: 14px;
               color: #292f33;
+              font-weight: bold;
             }
             .time {
               float: right;
+            }
+          }
+
+          .cards-media-container {
+            margin-top: 10px;
+            video {
+              height: 100%;
+              width: 100%;
             }
           }
 
@@ -632,6 +642,14 @@ s {
   position: relative;
   top: -3px;
   padding: 0 6px;
+}
+
+.retweet-icon {
+  &:before {
+    content: "\f021";
+    color: #ADD278;
+    font-size: 16px;
+  }
 }
 
 /*  right side bar */
