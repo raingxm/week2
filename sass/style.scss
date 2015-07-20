@@ -765,31 +765,46 @@ s {
       width: 90%;
       margin: 40px auto 0;
     }
+
+    ul li a span {
+      font-size: 16px;
+    }
   }
 }
 
-@media screen and (max-width: 1236px) {
+
+@media screen and (max-width: 980px) {
+  .content {
+    right: 0;
+    .profile-status, .stream-container {
+      margin: 40px 0 0 auto;
+    }
+
+    ul li a span {
+      font-size: 12px;
+    }
+  }
+
   .dashboard-right {
-    position: static;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 280px;
+    top: 1024px;
+    height: 100%;
+    bottom: 0;
+    padding: 0 10px;
+
     .right-first {
       display: none;
     }
-    position: absolute;
-    left: 0;
-    right: auto;
-    top: 1024px;
-    bottom: 0;
-    .right-second {
-      width: $left-side-width;
-    }
-  }
-}
 
-@media screen and (max-width: 980px) {
-  .left-aside,
-  .dashboard-right {
-    position: static;
-    display: none;
+    .right-second {
+      margin: 0;
+      a {
+        margin-right: 30px;
+      }
+    }
   }
 }
 
