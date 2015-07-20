@@ -79,6 +79,7 @@ s {
 .icon {
   display: inline-block;
   border: 0;
+  cursor: pointer;
   &:before {
     font-family: 'icomoon';
     text-align: center;
@@ -713,6 +714,11 @@ s {
         border: 1px solid gainsboro;
         &:before {
           content: "\f05d";
+          padding: 3px;
+          color: #5A5852;
+          border: 1px solid #E4E0D9;
+          position: relative;
+          top: 5px
         }
 
       }
