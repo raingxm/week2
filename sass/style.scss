@@ -11,7 +11,7 @@ body {
 .main {
   position: relative;
   z-index: 1;
-  min-height: 1024px;
+  min-height: 1360px;
 }
 
 @font-face {
@@ -421,7 +421,6 @@ s {
   position: absolute;
   left: $left-side-width;
   right: $right-side-width;
-  bottom: 0;
 
   a {
     text-decoration: none;
