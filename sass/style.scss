@@ -418,9 +418,9 @@ s {
 /* main content part */
 .content {
   background-color: #F2EEE8;
-  position: absolute;
   left: $left-side-width;
   right: $right-side-width;
+  overflow: hidden;
 
   a {
     text-decoration: none;

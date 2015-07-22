@@ -490,9 +490,9 @@ s {
 /* line 419, ../sass/style.scss */
 .content {
   background-color: #F2EEE8;
-  position: absolute;
   left: 280px;
   right: 300px;
+  overflow: hidden;
 }
 /* line 425, ../sass/style.scss */
 .content a {
