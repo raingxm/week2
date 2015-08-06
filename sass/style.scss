@@ -417,8 +417,6 @@ s {
 /* main content part */
 .content {
   background-color: #F2EEE8;
-  left: $left-side-width;
-  right: $right-side-width;
   overflow: hidden;
 
   a {
@@ -756,6 +754,8 @@ s {
 
 @media screen and (max-width: 1299px) {
   .content {
+    margin-left: $left-side-width;
+    margin-right: $right-side-width;
     .profile-status, .stream-container {
       width: 90%;
       margin: 40px auto 0;
@@ -770,7 +770,7 @@ s {
 
 @media screen and (max-width: 980px) {
   .content {
-    right: 0;
+    margin-right: 0;
     .profile-status, .stream-container {
       margin: 40px 0 0 auto;
     }
@@ -786,7 +786,6 @@ s {
     left: 0;
     width: 280px;
     top: 1024px;
-    height: 400px;
     bottom: 0;
     padding: 0 10px;
 
@@ -824,8 +823,8 @@ s {
   }
 
   .content {
-    left: 0;
-    right: 0;
+    margin-left: 0;
+    margin-right: 0;
 
     .profile-status {
       background-color: white;
